@@ -1,0 +1,82 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;800&display=swap');
+body{
+    font-family: Nunito sans, sans-serif;
+}
+
+.heading-primary{
+    font-size: 3rem;
+    font-weight: 700;
+    
+    @include respond(tab-land){
+        font-size: 2.5rem;
+    }
+
+    @include respond(tab-port){
+        font-size: 2rem;
+    }
+    @include respond(phone){
+        font-size: 3rem;
+    }
+
+    // @include respond(phone){
+    //     font-size: 1.8rem;
+    // }
+}
+
+.heading-secondary{
+    font-size: 2rem;
+    color: $color-black;
+
+    @include respond(small-phone){
+        font-size: 1.6rem;
+    }
+}
+.color-filter-white{
+    filter: invert(96%) sepia(14%) saturate(0%) hue-rotate(322deg) brightness(104%) contrast(101%);
+}
+
+.icon{
+
+    &__header{
+        color: $color-black;
+        font-size: 2rem;
+        padding:  1rem;
+        border-radius: .2rem;
+        transition: all .2s;
+
+        &:hover{
+            cursor: pointer;
+            background-color: $color-white;
+        }
+    }
+
+    &__footer{
+        color: $color-white;
+        font-size: 2rem;
+    }
+
+    &--back{
+        position: absolute;
+        display: none;
+        width: fit-content;
+        padding: .5rem;
+        border-radius: 100%;
+        background-color: rgba($color-black,0.4);
+        @include respond(phone){
+            display: block;
+        }
+        &:hover{
+            cursor: pointer;
+        }
+        svg {
+            height: 2rem;
+            width: 2.5rem;
+            fill: $color-white;
+        }
+    }
+}
+.copyright{
+    color: $color-primary-light;
+    font-size: 1.2rem;
+}

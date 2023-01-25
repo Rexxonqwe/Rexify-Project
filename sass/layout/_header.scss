@@ -1,0 +1,9 @@
+.header{
+    height: 8rem;
+    background-color: $color-primary-light;
+    align-items: center;
+
+    @include respond(tab-port){
+        height: 5rem;
+    }
+}

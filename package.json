@@ -1,0 +1,23 @@
+{
+  "name": "rexkart",
+  "version": "1.0.0",
+  "description": "E-commerce Application",
+  "default": "index.html",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss src/css/style.css -w",
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir dist/"
+  },
+  "author": "Akash Shah",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.1.0",
+    "node-sass": "^8.0.0",
+    "parcel": "^2.8.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "core-js": "^3.27.2",
+    "regenerator-runtime": "^0.13.11"
+  }
+}

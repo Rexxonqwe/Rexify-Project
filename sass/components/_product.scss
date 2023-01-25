@@ -1,0 +1,224 @@
+.product{
+    &:link,
+    &:visited{
+        text-decoration: none;
+        color: $color-black;
+    }
+    
+    &__card{
+        text-align: center;
+        padding: 1rem;
+        background-color: $color-primary-light;
+        width: fit-content;
+        transition: all .2s;
+        margin: 0 auto;
+        &:hover{
+            transform: scale(1.02);
+            cursor: pointer;
+        }
+
+
+        &--preview{
+            width: 100%;
+            padding: .5rem;
+            transition: all .3s;
+            &:hover{
+                background-color: $color-primary-light;
+                cursor: pointer;
+            }
+
+        }
+
+    }
+    &__image{
+        max-width: 100%;
+        max-height: 25rem;
+
+        &--box{
+            border: 1px dashed $color-white;
+        }
+
+        &--preview{
+            max-width: 100%;
+            max-height: 15rem;
+
+            &-box{
+                border: 1px dashed $color-black ;
+            }
+
+        }
+    }
+
+    &__brand{
+        color: $color-black;
+        font-size: 1.6rem;
+        font-weight: 700;
+
+        &--view{
+            color: $color-black;
+            font-size: 2rem;
+            font-weight: 700;
+            @include respond(tab-port){
+                font-size: 1.8rem;
+            }
+        }
+        &--preview{
+            font-size: 1.8rem;
+            font-weight: 600;
+
+            @include respond(tab-port){
+                font-size: 1.6rem;
+            }
+            @include respond(phone){
+                font-size: 2rem;
+            }
+        }
+    }
+
+    &__title{
+        color: $color-black;
+        font-size: 1.4rem;
+
+
+        &--view{
+            color: $color-black;
+            font-size: 1.4rem;
+            margin-bottom: $margin-bottom-small;
+        }
+        &--preview{
+            font-size: 1.4rem;
+            margin-bottom: $margin-bottom-small;
+
+            @include respond(tab-port){
+                font-size: 1.2rem;
+                margin-bottom: $margin-bottom-very-small;
+            }
+            @include respond(phone){
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    &__price{
+        color: $color-black;
+        font-size: 2rem;
+
+        &--preview{
+            font-size: 1.7rem;
+            margin-bottom: $margin-bottom-very-small;
+
+            @include respond(tab-port){
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
+            @include respond(phone){
+                font-size: 1.6rem;
+            }
+        }
+        &--view{
+            color: $color-black;
+            font-size: 2rem ;
+            margin-bottom: $margin-bottom-very-small;
+        }
+    }
+
+    
+    &__rating,&__size,&__color,&__fabric{
+        margin-bottom: $margin-bottom-medium;
+
+        @include respond(tab-port){
+            margin-bottom: $margin-bottom-very-small;
+        }
+
+
+    }
+
+
+    &__rating{
+
+        &--rate{
+            color: $color-white;
+            background-color: $color-cyan;
+            display: inline;
+            padding: .5rem .8rem;
+            border-radius: 2rem;
+            font-size: 1.4rem;
+            font-weight: 700;
+
+            
+        }
+
+        &--review{
+            display: inline;
+            font-size: 1.5rem;
+        }
+
+        &--preview{
+            margin-bottom: $margin-bottom-very-small;
+
+            &--review{
+                font-size: 1.2rem;
+                margin-top: $margin-bottom-very-small;
+
+                @include respond(phone){
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+
+    &__size{
+
+        &--tag{
+            font-size: 1.6rem;
+        }
+        &-box--sizes{
+            font-size: 1.6rem;
+            font-weight: 700;
+            padding: .5rem;
+            border: 2px dashed $color-primary-light;
+            transition: all .2s;
+
+            &:hover{
+                background-color: $color-primary-light;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__color{
+
+
+        &--tag{
+            font-size: 1.6rem;
+        }
+
+        &--label{
+            height: 3rem;
+            width: 3rem;
+            background-color: #000;
+            border-radius: 100%;
+        }
+    }
+
+    &__fabric{
+
+        &--tag{
+            font-size: 1.6rem;
+        }
+
+        &--content{
+            font-size: 1.6rem;
+        }
+    }
+
+    &__buynow{
+
+        &--btn{
+            color: $color-white;
+            background-color: $color-cyan;
+            margin-bottom: $margin-bottom-very-small;
+
+        }
+    }
+}

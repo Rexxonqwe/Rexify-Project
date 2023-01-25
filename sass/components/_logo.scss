@@ -1,0 +1,12 @@
+.logo{
+    &__shopping-cart{
+        color: #fff;
+        font-size: 2rem;
+    }
+    &__icon{
+        width: fit-content;
+        background-image: linear-gradient(to right bottom, $color-orange-light, $color-orange-dark);
+        padding: 1rem;
+        border-radius: 100%;
+    }
+}

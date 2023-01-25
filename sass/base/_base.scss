@@ -1,0 +1,25 @@
+*,
+*::after,
+*::before{
+    margin : 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+
+    @include respond(tab-land){
+        font-size: 60% ;
+    }
+
+    @include respond(tab-port){
+        font-size: 58%;
+    }
+}
+
+body{
+    box-sizing: border-box;
+    // padding: 2rem;
+}
+

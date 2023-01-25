@@ -1,0 +1,28 @@
+.spinner {
+    margin: 5rem auto;
+    text-align: center;
+  
+    svg {
+      height: 6rem;
+      width: 6rem;
+      fill: $color-cyan;
+      animation: rotate 2s infinite linear;
+    }
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+// SPINNER HTML
+// <div class="spinner">
+//   <svg>
+//     <use href="src/img/icons.svg#icon-loader"></use>
+//   </svg>
+// </div> 

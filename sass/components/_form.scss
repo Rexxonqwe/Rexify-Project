@@ -1,0 +1,78 @@
+.form{
+    &__filter{
+        padding: 1.5rem 3rem;
+        background-color: $color-white;
+        border-radius: .5rem;
+
+
+        @include respond(tab-land){
+            padding: 1rem 2rem;
+            border-radius: 3px;
+        }
+        @include respond(tab-port){
+            padding: 1rem 1.8rem;
+            border-radius: 3px;
+        }
+        @include respond(phone){
+            padding: .7rem 1rem;
+        }
+        &--label{
+            font-size: 1.6rem;
+            color: $color-black;
+        }
+
+        &--select{
+            outline: none;
+            border: none;
+            background-color: $color-white;
+            color: $color-black;
+            font-size: 1.5rem;
+            width: 7rem;
+
+            @include respond(tab-land){
+                width: 5rem;
+            }
+
+            @include respond(tab-port) {
+                width: 4rem;
+            }
+        }
+
+    }
+}
+
+
+.search{
+    max-width: 40rem;
+    padding: 1rem 2rem;
+    background-color: $color-white;
+    border-radius: .5rem;
+    transition: all .2s;
+
+    &:focus-within {
+        transform: translateY(-2px);
+        box-shadow: 0 0.7rem 3rem rgba($color-black, 0.08);
+      }
+
+    @include respond(tab-land){
+        max-width: 40rem;
+        padding: 1rem 2rem;
+        border-radius: 3px;
+    }
+
+    @include respond(small-phone){
+        max-width: 100%;
+        padding: .7rem 1.4rem;
+    }
+
+
+    &__input{
+        border: none;
+        background-color: $color-white;
+        outline: none;
+        font-size: 1.8rem;
+        color: $color-black;
+
+    }
+
+}

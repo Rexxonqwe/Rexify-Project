@@ -1,0 +1,65 @@
+.u-center-text{
+    text-align: center;
+}
+.u-margin-bottom-big{
+    margin-bottom: $margin-bottom-big;
+}
+.u-margin-bottom-small{
+    margin-bottom: $margin-bottom-small;
+    
+}
+.u-margin-bottom-medium{
+    margin-bottom: $margin-bottom-medium;
+}
+.u-margin-bottom-very-small{
+    margin-bottom: $margin-bottom-very-small;
+}
+.u-padding-horizontal{
+    padding-left:8rem;
+    padding-right:8rem;
+
+    @include respond(tab-land){
+        padding-left:6rem;
+        padding-right:6rem;
+    }
+
+    @include respond(tab-port){
+        padding-left:5rem;
+        padding-right:5rem;
+    }
+
+    @include respond(phone){
+        padding-left:2.5rem;
+        padding-right:2.5rem;
+    }
+}
+
+.u-padding-all-side-small{
+    padding: 1rem;
+}
+.u-padding-all-side-medium{
+    padding: 2rem;
+}
+
+.u-flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.u-display{
+    display: block !important;
+}
+
+.u-display-grid{
+    display: grid !important;
+}
+
+.u-imgBtn--active{
+    border: 1px solid $color-black;
+    width: 100%;
+    max-height: 100%;
+}
+.u-imgBtn--inactive{
+    border: none;
+}

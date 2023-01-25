@@ -1,0 +1,42 @@
+.btn{
+    text-decoration: none;
+    &-primary{
+        width: 100%;
+        text-transform: uppercase;
+        border: none;
+        font-size: 1.8rem;
+        padding: 1rem 0;
+        cursor: pointer;
+        border-radius: .5rem;
+        font-weight: 700;
+
+        @include respond(tab-port){
+            font-size: 1.5rem;
+            padding: .7rem 0;
+            border-radius: 2px;
+        }
+    }
+    &__search{
+        border: none;
+        background-color: $color-white;
+    }
+
+    &__login{
+        color: $color-black;
+        font-size: 1.6rem;
+    }
+
+    &__signup{
+        color: $color-white;
+        font-size: 1.6rem;
+        background-image: linear-gradient(to right bottom , $color-orange-light, $color-orange-dark);
+        padding: 1rem 2.5rem;
+        border-radius: 5rem;
+
+        @include respond(tab-port){
+            padding: .5rem 1.7rem;
+            border-radius: 2.5rem;
+        }
+    }
+   
+}
