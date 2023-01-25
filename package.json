@@ -6,7 +6,7 @@
   "scripts": {
     "compile:sass": "node-sass sass/main.scss src/css/style.css -w",
     "start": "parcel index.html",
-    "build": "parcel build index.html --dist-dir dist/"
+    "build": "parcel build index.html --dist-dir ./dist"
   },
   "author": "Akash Shah",
   "license": "ISC",
