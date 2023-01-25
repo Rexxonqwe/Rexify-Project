@@ -37,10 +37,14 @@ const controlChangeImg = async function (imgSrc) {
   productsView.renderNewImage(imgSrc);
 };
 
+const newFeature = function () {
+  console.log("Welcome to NEW application!");
+};
 const init = function () {
   productsView.addHandler(controlProduct);
   searchView.addHandlerSearch(controlSearchResults);
   productsView.addHandlerChangeImg(controlChangeImg);
+  newFeature();
 };
 
 init();
