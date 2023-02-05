@@ -8,12 +8,13 @@
     &__card{
         text-align: center;
         padding: 1rem;
-        background-color: $color-primary-light;
         width: fit-content;
         transition: all .2s;
         margin: 0 auto;
+        box-shadow: 0 0.7rem 3rem rgba($color-black, 0.18);
         &:hover{
             transform: scale(1.02);
+        // background-color: $color-primary-light;
             cursor: pointer;
         }
 
@@ -35,7 +36,7 @@
         max-height: 25rem;
 
         &--box{
-            border: 1px dashed $color-white;
+            border: 1px dashed $color-black;
         }
 
         &--preview{
